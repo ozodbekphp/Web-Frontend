@@ -1,0 +1,242 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap'); */
+
+:root {
+    --primary-color: #FF2D20;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --bg-main: #f8fafc;
+    --bg-sidebar: #ffffff;
+    --bg-card: #ffffff;
+    --border-color: #e2e8f0;
+    --code-bg: #18181b;
+    --code-text: #f4f4f5;
+    --code-keyword: #f43f5e;
+    --code-string: #10b981;
+    --code-comment: #71717a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.6;
+    display: flex;
+}
+
+/* Sidebar Uslublari */
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: var(--bg-sidebar);
+    border-right: 1px solid var(--border-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    padding: 2rem 1.5rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 2rem;
+    text-decoration: none;
+}
+
+.brand span {
+    color: var(--primary-color);
+}
+
+.sidebar h3 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 0.4rem 0.75rem;
+    color: #475569;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #f1f5f9;
+    color: var(--primary-color);
+}
+
+/* Asosiy Kontent Area */
+.main-content {
+    margin-left: 300px;
+    padding: 3rem 4rem;
+    max-width: 1000px;
+    width: calc(100% - 300px);
+}
+
+.header-doc h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    margin-bottom: 0.5rem;
+}
+
+.header-doc p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+}
+
+/* bo'limlar */
+section {
+    margin-bottom: 4rem;
+    scroll-margin-top: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: #0f172a;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    color: #1e293b;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #334155;
+}
+
+/* Jadvallar */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: var(--bg-card);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+th, td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: #f1f5f9;
+    color: #0f172a;
+    font-weight: 600;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Kod Bloklari */
+pre {
+    background-color: var(--code-bg);
+    color: var(--code-text);
+    padding: 1.25rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    margin: 1rem 0 1.5rem 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+code {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9em;
+    background-color: #e2e8f0;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    color: #0f172a;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    color: inherit;
+}
+
+/* Ogohlantirish va Maslahat (Alerts) */
+.alert {
+    background-color: #fffbeb;
+    border-left: 4px solid #f59e0b;
+    padding: 1rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1.5rem 0;
+}
+
+.alert-success {
+    background-color: #f0fdf4;
+    border-left-color: #22c55e;
+}
+
+.alert-danger {
+    background-color: #fef2f2;
+    border-left-color: #ef4444;
+}
+
+.alert-title {
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+/* Grid formatidagi xato/to'g'ri qoidalar */
+.rules-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.rule-card {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.2rem;
+}
+
+.rule-card.correct {
+    border-top: 4px solid #22c55e;
+}
+
+.rule-card.wrong {
+    border-top: 4px solid #ef4444;
+}
+
+.rule-card h4 {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

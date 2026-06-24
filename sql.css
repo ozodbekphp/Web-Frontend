@@ -1,0 +1,159 @@
+/* Umumiy sozlamalar va sahifa foni (Ko'zni charchatmaydigan pastel/to'q ohanglar) */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #334155; /* Slate qora-kulrang */
+    background-color: #f8fafc; /* Juda yumshoq och kulrang-ko'k fon */
+    margin: 0;
+    padding: 0;
+}
+
+/* Sarlavha qismi */
+.main-header {
+    background-color: #1e293b; /* To'q ko'k-kulrang */
+    color: #f8fafc;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin-top: 0.5rem;
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+/* Konteyner o'lchami */
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Har bir mavzu kartochkasi */
+.card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.8rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    color: #0f172a;
+    border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.card h3 {
+    color: #334155;
+    font-size: 1.15rem;
+    margin-top: 1.5rem;
+}
+
+/* Bloknot / Muhim eslatma qismlari */
+.note {
+    background-color: #f0fdf4; /* Yumshoq yashil fon */
+    border-left: 4px solid #16a34a;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 0 6px 6px 0;
+    color: #14532d;
+}
+
+/* Jadvallar (Responsive va minimalistik dizayn) */
+.table-responsive {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+th, td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Inline kod elementlari */
+code {
+    background-color: #f1f5f9;
+    color: #b91c1c; /* To'q qizil pastel kod rangi */
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9em;
+}
+
+/* Kod bloklari (Pre formatdagilar) */
+pre {
+    background-color: #1e293b; /* To'q blok, kod yaxshi ko'rinishi uchun */
+    color: #e2e8f0;
+    padding: 1.2rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    border: 1px solid #334155;
+}
+
+pre code {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+    border-radius: 0;
+}
+
+/* SQL Kodlarini chiroyli ko'rsatish (Syntax highlighting) uchun klasslar */
+.keyword {
+    color: #38bdf8; /* Och ko'k rangli kalit so'zlar */
+    font-weight: bold;
+}
+
+.function {
+    color: #fbcfe8; /* Pastel pushti funksiyalar */
+}
+
+.string {
+    color: #34d399; /* Yumshoq yashil matnlar */
+}
+
+.comment {
+    color: #64748b; /* Kulrang izohlar */
+    font-style: italic;
+}
+
+/* Sahifa yakuni */
+.main-footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #64748b;
+    font-size: 0.85rem;
+    background-color: #f1f5f9;
+    margin-top: 4rem;
+    border-top: 1px solid #e2e8f0;
+}
